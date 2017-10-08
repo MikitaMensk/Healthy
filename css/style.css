@@ -1,0 +1,238 @@
+﻿html, body, #wrap { height: 100%; font-family: 'Open Sans', sans-serif;}
+body > #wrap {height: auto; min-height: 100%;}
+body {
+	background: white;
+}
+@font-face {
+	font-family: Light;
+	src: url(../font/OpenSans-CondLight.ttf) format('truetype');
+}
+a:hover{text-decoration: none;}
+
+#wrap {
+	width: 1344px; margin:0 auto; padding-bottom: 300px;
+
+}
+header {
+	padding: 0 0px; height: 110px; width: 100%;
+	border-bottom: 2px dashed  #4ba82e;
+}
+#logo {
+	float: left; margin-right: 40px;
+}
+h3 {
+	width: 200px; position: fixed; right: 0px; top: 14%;
+	color: #4ba82e; font-size: 16px;
+}
+#energy {
+	position: fixed; right: 0px; top: 19%; min-width: 200px; padding: 10px;
+	font-size: 30px; color: #fff; background: #4ba82e;
+	-webkit-border-top-left-radius: 10px; -webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-topleft: 10px; -moz-border-radius-bottomleft: 10px;
+	border-top-left-radius: 10px;	border-bottom-left-radius: 10px;
+}
+#content {
+	opacity: 1;
+}
+h1 {
+	font-size: 50px; font-weight: bold; font-family: Oxygen; color: #4ba82e; text-align: center;
+	margin: 0 auto; width: 50%;
+}
+h2 {
+	font-size: 28px; font-weight: bold; font-family: Oxygen; color: #4ba82e; text-align: center;
+	padding-bottom: 10px; margin: 0 auto; width: 50%;
+}
+#table {
+	position: relative;  height: 1400px;
+}
+#table>div {
+	position: absolute; cursor: pointer;
+}
+#cheeseHolland {
+	background: url("../i/holland_cheese.png"); background-size: 160px 140px;
+	top: 80px; width: 160px; height: 140px;
+}
+#sprats {
+	background: url("../i/schproti.png");
+	 top: 90px;  left: 300px; width: 180px; height: 108px;
+}
+#cabbage {
+	background: url("../i/cabbage.png");
+	top: 90px;  left: 603px; width: 160px; height: 177px;
+}
+#carrot {
+	background: url("../i/carrot.png");
+	top: 250px;  left: 132px; width: 200px; height: 35px;
+}
+#potato {
+	background: url("../i/potato.png");
+	top: 250px;  left: 410px; width: 170px; height: 121px;
+}
+#beet {
+	background: url("../i/beet.png");
+	top: 90px;  left: 867px; width: 130px; height: 163px;
+}
+#tomato {
+	background: url("../i/tomato.png");
+	top: 90px;  left: 1080px; width: 140px; height: 133px;
+}
+#pork {
+	background: url("../i/pork.png");
+	top: 250px;  left: 710px; width: 200px; height: 143px;
+}
+#pear {
+	background: url("../i/pear.png");
+	top: 250px;  left: 1015px; width: 90px; height: 140px;
+}
+#ragout {
+	background: url("../i/ragout.png");
+	top: 370px;  left: 0px; width: 160px; height: 112px;
+}
+#cucumber {
+	 background: url("../i/cucumber.png");
+	 top: 390px;  left: 250px; width: 160px; height: 77px;
+}
+#apple {
+	background: url("../i/apple.png");
+	top: 350px;  left: 560px; width: 140px; height: 127px;
+}
+#grape {
+	background: url("../i/grape.png");
+	top: 380px;  left: 864px; width: 140px; height: 103px;
+}
+#plum {
+	 background: url("../i/plum.png");
+	 top: 400px;  left: 1115px; width: 140px; height: 90px;
+}
+#currant {
+	background: url("../i/currant.png");
+	top: 505px;  left: 100px; width: 140px; height: 119px;
+}
+#sugar {
+	background: url("../i/sugar.png");
+	top: 510px;  left: 400px; width: 140px; height: 112px;
+}
+#bread {
+	background: url("../i/bread.png");
+	top: 510px;  left: 710px; width: 140px; height: 140px;
+}
+#egg {
+	background: url("../i/egg.png");
+	top: 510px;  left: 980px; width: 140px; height: 124px;
+}
+#chocolate {
+	background: url("../i/chocolate.png");
+	top: 650px;  left: 0px; width: 150px; height: 111px;
+}
+#candy {
+	background: url("../i/candy.png");
+	top: 640px;  left: 270px; width: 140px; height: 140px;
+}
+#peas {
+	background: url("../i/peas.png");
+	top: 650px;  left:560px; width: 140px; height: 70px;
+}
+#milk {
+	background: url("../i/milk.png");
+	top: 605px;  left:880px; width: 70px; height: 163px;
+}
+#borscht {
+	background: url("../i/borscht.png");
+	top: 650px;  left:1120px; width: 140px; height: 77px;
+}
+#chicken {
+	background: url("../i/chicken.png");
+	top: 800px;  left:110px; width: 140px; height: 93px;
+}
+#porkFatty {
+	background: url("../i/porkFatty.png");
+	top: 770px;  left:400px; width: 150px; height: 150px;
+}
+#pickle {
+	background: url("../i/pickle.png");
+	top: 790px;  left:685px; width: 140px; height: 94px;
+}
+#whiteBread {
+	background: url("../i/whiteBread.png");
+	top: 780px;  left:985px; width: 150px; height: 113px;
+}
+#sunflower {
+	background: url("../i/sunflower.png");
+	top: 890px;  left:0px; width: 90px; height: 157px;
+}
+#curd {
+	background: url("../i/curd.png");
+	top: 910px;  left:250px; width:140px; height: 102px;
+}
+#honey {
+	background: url("../i/honey.png");
+	top: 910px;  left:550px; width:140px; height: 110px;
+}
+#veal {
+	background: url("../i/veal.png");
+	top: 900px;  left:840px; width:150px; height: 140px;
+}
+#icecream {
+	background: url("../i/icecream.png");
+	top: 880px;  left:1180px; width:90px; height: 153px;
+}
+#beef {
+	background: url("../i/beef.png");
+	top: 1070px;  left:100px; width: 140px; height: 90px;
+}
+#condensed {
+	background: url("../i/condensed.png");
+	top: 1040px;  left:400px; width: 140px; height: 140px;
+}
+#vegetableSoup {
+	background: url("../i/vegetableSoup.png");
+	top: 1040px;  left:700px; width: 140px; height: 120px;
+}
+#oatmeal {
+	background: url("../i/oatmeal.png");
+	top: 1070px;  left:1000px; width: 140px; height: 75px;
+}
+#pasta {
+	background: url("../i/pasta.png");
+	top: 1210px;  left:0px; width: 140px; height: 76px;
+}
+#butter {
+	background: url("../i/butter.png");
+	top: 1200px;  left:240px; width: 140px; height: 104px;
+}
+#cake {
+	background: url("../i/cake.png");
+	top: 1195px;  left:540px; width: 140px; height: 102px;
+}
+#sausage {
+	background: url("../i/sausage.png");
+	top: 1195px;  left:840px; width: 150px; height: 99px;
+}
+#rice {
+	background: url("../i/rice.png");
+	top: 1195px;  left:1130px; width: 140px; height: 93px;
+}
+#krakow {
+	background: url("../i/krakow.png");
+	top: 1350px;  left:100px; width: 160px; height: 75px;
+}
+#beefFatty {
+	background: url("../i/beefFatty.png");
+	top: 1350px;  left:400px; width: 150px; height: 84px;
+}
+#sourCream {
+	background: url("../i/sourCream.png");
+	top: 1350px;  left:690px; width: 160px; height: 160px;
+}
+footer {
+	padding: 0px 0px 0 110px;
+	height: 221px; width: 1234px; margin:0 auto;
+	position: relative;	margin-top: -221px; clear: both;
+	background: #060810;
+}
+footer a {
+	 font-size: 14px; color: #8297a7;
+ }
+footer a:hover {
+	text-decoration: underline;
+}

@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Healthy Eating</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/clearfix.css" media="screen" />
+	<link rel="stylesheet" href="jquery-ui-1.11.4.custom/jquery-ui.css">
+	<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+<!--[if IE 8.0]><link rel=stylesheet type="text/css" media="all" href="css/ie8.css" /><![endif]-->
+<!--[if lt IE 9]>
+<script>
+	document.createElement('header');
+	document.createElement('footer');
+</script>
+<![endif]-->
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
+	<script src="jquery-ui-1.11.4.custom/jquery-ui.js"></script>
+	<script>
+		$(function() {
+			$( document ).tooltip();
+		});
+	</script>
+</head>
+<body>
+<div id="wrap">
+<header class="clearfix">
+	<div id="logo">
+		<img src="i/natur.jpg" height="110" alt="" />
+	</div>
+	<h1>Азбука</h1>
+	<h2>ЗДОРОВОГО ПИТАНИЯ</h2>
+</header>
+<div id="content">
+	<div id="table">
+		<div id="cheeseHolland" title="380">&nbsp;</div>
+		<div id="sprats" title="364">&nbsp;</div>
+		<div id="cabbage" title="28">&nbsp;</div>
+		<div id="carrot" title="30">&nbsp;</div>
+		<div id="potato" title="83">&nbsp;</div>
+		<div id="beet" title="50">&nbsp;</div>
+		<div id="tomato" title="19">&nbsp;</div>
+		<div id="pork" title="355">&nbsp;</div>
+		<div id="pear" title="40">&nbsp;</div>
+		<div id="ragout" title="133">&nbsp;</div>
+		<div id="cucumber" title="15">&nbsp;</div>
+		<div id="apple" title="45">&nbsp;</div>
+		<div id="grape" title="69">&nbsp;</div>
+		<div id="plum" title="40">&nbsp;</div>
+		<div id="currant" title="40">&nbsp;</div>
+		<div id="sugar" title="374">&nbsp;</div>
+		<div id="bread" title="190">&nbsp;</div>
+		<div id="egg" title="168">&nbsp;</div>
+		<div id="chocolate" title="557">&nbsp;</div>
+		<div id="candy" title="395">&nbsp;</div>
+		<div id="peas" title="303">&nbsp;</div>
+		<div id="milk" title="58">&nbsp;</div>
+		<div id="borscht" title="82">&nbsp;</div>
+		<div id="chicken" title="165">&nbsp;</div>
+		<div id="porkFatty" title="489">&nbsp;</div>
+		<div id="pickle" title="84">&nbsp;</div>
+		<div id="whiteBread" title="226">&nbsp;</div>
+		<div id="sunflower" title="900">&nbsp;</div>
+		<div id="curd" title="156">&nbsp;</div>
+		<div id="honey" title="308">&nbsp;</div>
+		<div id="veal" title="90">&nbsp;</div>
+		<div id="icecream" title="178">&nbsp;</div>
+		<div id="beef" title="187">&nbsp;</div>
+		<div id="condensed" title="315">&nbsp;</div>
+		<div id="vegetableSoup" title="72">&nbsp;</div>
+		<div id="oatmeal" title="50">&nbsp;</div>
+		<div id="pasta" title="333">&nbsp;</div>
+		<div id="butter" title="748">&nbsp;</div>
+		<div id="cake" title="350">&nbsp;</div>
+		<div id="sausage" title="277">&nbsp;</div>
+		<div id="rice" title="284">&nbsp;</div>
+		<div id="krakow" title="375">&nbsp;</div>
+		<div id="beefFatty" title="225">&nbsp;</div>
+		<div id="sourCream" title="205">&nbsp;</div>
+</div>
+</div>
+</div>
+<!--<footer>
+
+</footer>-->
+<h3>One click - 100 gramm</h3>
+<div id="energy">0</div>
+
+<script>
+$(document).ready(function(){
+	var sumField = $("#energy");
+	var cheese = $("#cheeseHolland");
+	var sprats = $("#sprats");
+	var cabbage = $("#cabbage");
+	var carrot = $("#carrot");
+	var potato = $("#potato");
+	var beet = $("#beet");
+	var tomato = $("#tomato");
+	var pork = $("#pork");
+	var pear = $("#pear");
+	var ragout = $("#ragout");
+	var cucumber = $("#cucumber");
+	var apple = $("#apple");
+	var grape = $("#grape");
+	var plum = $("#plum");
+	var currant = $("#currant");
+	var sugar = $("#sugar");
+	var bread = $("#bread");
+	var egg = $("#egg");
+	var chocolate = $("#chocolate");
+	var candy = $("#candy");
+	var peas = $("#peas");
+	var milk = $("#milk");
+	var borscht = $("#borscht");
+	var chicken = $("#chicken");
+	var porkFatty = $("#porkFatty");
+	var pickle = $("#pickle");
+	var whiteBread = $("#whiteBread");
+	var sunflower = $("#sunflower");
+	var curd = $("#curd");
+	var honey = $("#honey");
+	var veal = $("#veal");
+	var icecream = $("#icecream");
+	var beef = $("#beef");
+	var condensed = $("#condensed");
+	var vegetableSoup = $("#vegetableSoup");
+	var oatmeal = $("#oatmeal");
+	var pasta = $("#pasta");
+	var butter = $("#butter");
+	var cake = $("#cake");
+	var sausage = $("#sausage");
+	var rice = $("#rice");
+	var krakow = $("#krakow");
+	var beefFatty = $("#beefFatty");
+	var sourCream = $("#sourCream");
+
+	cheese.click(function(){
+		var cheeseEn = 380;
+		var sum = parseFloat(sumField.text());
+		sum = sum + cheeseEn;
+		sumField.text(sum);
+	});
+	sprats.click(function(){
+		var spratsEn = 364;
+		var sum = parseFloat(sumField.text());
+		sum = sum + spratsEn;
+		sumField.text(sum);
+	});
+	cabbage.click(function(){
+		var cabbageEn = 28;
+		var sum = parseFloat(sumField.text());
+		sum = sum + cabbageEn;
+		sumField.text(sum);
+	});
+	carrot.click(function(){
+		var carrotEn = 30;
+		var sum = parseFloat(sumField.text());
+		sum = sum + carrotEn;
+		sumField.text(sum);
+	});
+	potato.click(function(){
+		var potatoEn = 83;
+		var sum = parseFloat(sumField.text());
+		sum = sum + potatoEn;
+		sumField.text(sum);
+	});
+	beet.click(function(){
+		var beetEn = 50;
+		var sum = parseFloat(sumField.text());
+		sum = sum + beetEn;
+		sumField.text(sum);
+	});
+	tomato.click(function(){
+		var tomatoEn = 19;
+		var sum = parseFloat(sumField.text());
+		sum = sum + tomatoEn;
+		sumField.text(sum);
+	});
+	pork.click(function(){
+		var porkEn = 355;
+		var sum = parseFloat(sumField.text());
+		sum = sum + porkEn;
+		sumField.text(sum);
+	});
+	pear.click(function(){
+		var pearEn = 40;
+		var sum = parseFloat(sumField.text());
+		sum = sum + pearEn;
+		sumField.text(sum);
+	});
+	ragout.click(function(){
+		var ragoutEn = 133;
+		var sum = parseFloat(sumField.text());
+		sum = sum + ragoutEn;
+		sumField.text(sum);
+	});
+	cucumber.click(function(){
+		var cucumberEn = 15;
+		var sum = parseFloat(sumField.text());
+		sum = sum + cucumberEn;
+		sumField.text(sum);
+	});
+	apple.click(function(){
+		var appleEn = 45;
+		var sum = parseFloat(sumField.text());
+		sum = sum + appleEn;
+		sumField.text(sum);
+	});
+	grape.click(function(){
+		var grapeEn = 69;
+		var sum = parseFloat(sumField.text());
+		sum = sum + grapeEn;
+		sumField.text(sum);
+	});
+	plum.click(function(){
+		var plumEn = 40;
+		var sum = parseFloat(sumField.text());
+		sum = sum + plumEn;
+		sumField.text(sum);
+	});
+	currant.click(function(){
+		var currantEn = 40;
+		var sum = parseFloat(sumField.text());
+		sum = sum + currantEn;
+		sumField.text(sum);
+	});
+	sugar.click(function(){
+		var sugarEn = 374;
+		var sum = parseFloat(sumField.text());
+		sum = sum + sugarEn;
+		sumField.text(sum);
+	});
+	bread.click(function(){
+		var breadEn = 190;
+		var sum = parseFloat(sumField.text());
+		sum = sum + breadEn;
+		sumField.text(sum);
+	});
+	egg.click(function(){
+		var eggEn = 168;
+		var sum = parseFloat(sumField.text());
+		sum = sum + eggEn;
+		sumField.text(sum);
+	});
+	chocolate.click(function(){
+		var chocolateEn = 557;
+		var sum = parseFloat(sumField.text());
+		sum = sum + chocolateEn;
+		sumField.text(sum);
+	});
+	candy.click(function(){
+		var candyEn = 395;
+		var sum = parseFloat(sumField.text());
+		sum = sum + candyEn;
+		sumField.text(sum);
+	});
+	peas.click(function(){
+		var peasEn = 303;
+		var sum = parseFloat(sumField.text());
+		sum = sum + peasEn;
+		sumField.text(sum);
+	});
+	milk.click(function(){
+		var milkEn = 58;
+		var sum = parseFloat(sumField.text());
+		sum = sum + milkEn;
+		sumField.text(sum);
+	});
+	borscht.click(function(){
+		var borshtEn = 82;
+		var sum = parseFloat(sumField.text());
+		sum = sum + borshtEn;
+		sumField.text(sum);
+	});
+	chicken.click(function(){
+		var chickenEn = 165;
+		var sum = parseFloat(sumField.text());
+		sum = sum + chickenEn;
+		sumField.text(sum);
+	});
+	porkFatty.click(function(){
+		var porkFattyEn = 489;
+		var sum = parseFloat(sumField.text());
+		sum = sum + porkFattyEn;
+		sumField.text(sum);
+	});
+	pickle.click(function(){
+		var pickleEn = 84;
+		var sum = parseFloat(sumField.text());
+		sum = sum + pickleEn;
+		sumField.text(sum);
+	});
+	whiteBread.click(function(){
+		var whiteBreadEn = 226;
+		var sum = parseFloat(sumField.text());
+		sum = sum + whiteBreadEn;
+		sumField.text(sum);
+	});
+	sunflower.click(function(){
+		var sunflowerEn = 900;
+		var sum = parseFloat(sumField.text());
+		sum = sum + sunflowerEn;
+		sumField.text(sum);
+	});
+	curd.click(function(){
+		var curdEn = 156;
+		var sum = parseFloat(sumField.text());
+		sum = sum + curdEn;
+		sumField.text(sum);
+	});
+	honey.click(function(){
+		var honeyEn = 308;
+		var sum = parseFloat(sumField.text());
+		sum = sum + honeyEn;
+		sumField.text(sum);
+	});
+	veal.click(function(){
+		var vealEn = 90;
+		var sum = parseFloat(sumField.text());
+		sum = sum + vealEn;
+		sumField.text(sum);
+	});
+	icecream.click(function(){
+		var icecreamEn = 178;
+		var sum = parseFloat(sumField.text());
+		sum = sum + icecreamEn;
+		sumField.text(sum);
+	});
+	beef.click(function(){
+		var beefEn = 187;
+		var sum = parseFloat(sumField.text());
+		sum = sum + beefEn;
+		sumField.text(sum);
+	});
+	condensed.click(function(){
+		var condensedEn = 315;
+		var sum = parseFloat(sumField.text());
+		sum = sum + condensedEn;
+		sumField.text(sum);
+	});
+	vegetableSoup.click(function(){
+		var vegetableSoupEn = 72;
+		var sum = parseFloat(sumField.text());
+		sum = sum + vegetableSoupEn;
+		sumField.text(sum);
+	});
+	oatmeal.click(function(){
+		var oatmealEn = 50;
+		var sum = parseFloat(sumField.text());
+		sum = sum + oatmealEn;
+		sumField.text(sum);
+	});
+	pasta.click(function(){
+		var pastaEn = 333;
+		var sum = parseFloat(sumField.text());
+		sum = sum + pastaEn;
+		sumField.text(sum);
+	});
+	butter.click(function(){
+		var butterEn = 748;
+		var sum = parseFloat(sumField.text());
+		sum = sum + butterEn;
+		sumField.text(sum);
+	});
+	cake.click(function(){
+		var cakeEn = 350;
+		var sum = parseFloat(sumField.text());
+		sum = sum + cakeEn;
+		sumField.text(sum);
+	});
+	sausage.click(function(){
+		var sausageEn = 277;
+		var sum = parseFloat(sumField.text());
+		sum = sum + sausageEn;
+		sumField.text(sum);
+	});
+	rice.click(function(){
+		var riceEn = 284;
+		var sum = parseFloat(sumField.text());
+		sum = sum + riceEn;
+		sumField.text(sum);
+	});
+	krakow.click(function(){
+		var krakowEn = 375;
+		var sum = parseFloat(sumField.text());
+		sum = sum + krakowEn;
+		sumField.text(sum);
+	});
+	beefFatty.click(function(){
+		var beefFattyEn = 225;
+		var sum = parseFloat(sumField.text());
+		sum = sum + beefFattyEn;
+		sumField.text(sum);
+	});
+	sourCream.click(function(){
+		var sourCreamEn = 205;
+		var sum = parseFloat(sumField.text());
+		sum = sum + sourCreamEn;
+		sumField.text(sum);
+	});
+});
+</script>
+</body> 
+</html>
